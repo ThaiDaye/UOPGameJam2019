@@ -1,14 +1,16 @@
-﻿Log file open, 06/17/19 12:56:06
+﻿Log file open, 06/17/19 22:44:10
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi.dll' does not exist
 LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: UoP_GJ_ADPD
 LogPlatformFile: Not using cached read wrapper
-LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.291327
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.218731
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -92,7 +94,7 @@ LogPluginManager: Mounting plugin ProceduralMeshComponent
 LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.111s to configure plugins.
+LogStreaming: Display: Took  0.071s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -113,18 +115,17 @@ LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connecti
 LogInit:  - LocalHostAddr = Default
 LogInit:  - BufferSize = 65536
 LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-LogHMD: Failed initializing OVRPlugin 1.25.0
 LogInit: Build: ++UE4+Release-4.20-CL-4369336
 LogInit: Engine Version: 4.20.3-4369336+++UE4+Release-4.20
 LogInit: Compatible Engine Version: 4.20.0-4212847+++UE4+Release-4.20
 LogInit: Net CL: 4212847
-LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz, GPU: NVIDIA GeForce GTX 1070
+LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz, GPU: Intel(R) HD Graphics 630
 LogInit: Compiled (64-bit): Sep 17 2018 12:26:19
 LogInit: Compiled with Visual C++: 19.13.26129.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.20
-LogInit: Command Line: 
-LogInit: Base Directory: D:/Unreal/UE_4.20/Engine/Binaries/Win64/
+LogInit: Command Line:  /Game/TopDownBP/Maps/TopDownExampleMap -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess -messaging -SessionName="Play in Standalone Game" -windowed 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogDevObjectVersion: Number of dev versions registered: 20
 LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
@@ -147,585 +148,1124 @@ LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC
 LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
 LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 12
 LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
-LogStreaming: Display: Took  0.000s to delete old logs.
+LogStreaming: Display: Took  0.001s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2019.06.17-11.56.07:586][  0]LogInit: Selected Device Profile: [Windows]
-[2019.06.17-11.56.07:586][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.06.17-11.56.07:632][  0]LogHAL: Display: Platform has ~ 32 GB [34261028864 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2019.06.17-11.56.07:632][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
-[2019.06.17-11.56.07:632][  0]LogInit: Going up to parent DeviceProfile []
-[2019.06.17-11.56.07:633][  0]LogInit: Computer: W0DEL-1-125D-16
-[2019.06.17-11.56.07:633][  0]LogInit: User: up782071
-[2019.06.17-11.56.07:633][  0]LogInit: CPU Page size=4096, Cores=4
-[2019.06.17-11.56.07:633][  0]LogInit: High frequency timer resolution =3.914065 MHz
-[2019.06.17-11.56.07:634][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
-[2019.06.17-11.56.07:634][  0]LogMemory: Platform Memory Stats for Windows
-[2019.06.17-11.56.07:634][  0]LogMemory: Process Physical Memory: 101.68 MB used, 101.68 MB peak
-[2019.06.17-11.56.07:634][  0]LogMemory: Process Virtual Memory: 94.39 MB used, 94.39 MB peak
-[2019.06.17-11.56.07:634][  0]LogMemory: Physical Memory: 6504.67 MB used,  26169.20 MB free, 32673.86 MB total
-[2019.06.17-11.56.07:634][  0]LogMemory: Virtual Memory: 526.33 MB used,  26169.20 MB free, 134217728.00 MB total
-[2019.06.17-11.56.07:685][  0]LogInit: Using OS detected language (en-GB).
-[2019.06.17-11.56.07:685][  0]LogInit: Using OS detected locale (en-GB).
-[2019.06.17-11.56.07:686][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
-[2019.06.17-11.56.08:003][  0]LogStreaming: Display: Took  0.318s to InitEngineTextLocalization.
-[2019.06.17-11.56.08:003][  0]LogInit: Setting process to per monitor DPI aware
-[2019.06.17-11.56.08:028][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.06.17-11.56.08:028][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.06.17-11.56.08:227][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.06.17-11.56.08:227][  0]LogD3D11RHI: D3D11 adapters:
-[2019.06.17-11.56.08:279][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
-[2019.06.17-11.56.08:279][  0]LogD3D11RHI:       8092/0/16336 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2019.06.17-11.56.08:281][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.06.17-11.56.08:281][  0]LogD3D11RHI:       0/0/16336 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.06.17-11.56.08:281][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.06.17-11.56.08:284][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.06.17-11.56.08:284][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
-[2019.06.17-11.56.08:284][  0]LogWindows: EnumDisplayDevices:
-[2019.06.17-11.56.08:284][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
-[2019.06.17-11.56.08:284][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2019.06.17-11.56.08:284][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2019.06.17-11.56.08:285][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2019.06.17-11.56.08:285][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2019.06.17-11.56.08:285][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
-[2019.06.17-11.56.08:285][  0]LogD3D11RHI:   Driver Version: 399.07 (internal:24.21.13.9907, unified:399.07)
-[2019.06.17-11.56.08:285][  0]LogD3D11RHI:      Driver Date: 8-21-2018
-[2019.06.17-11.56.08:285][  0]LogRHI: Texture pool is 5664 MB (70% of 8092 MB)
-[2019.06.17-11.56.08:315][  0]LogD3D11RHI: Async texture creation enabled
-[2019.06.17-11.56.08:331][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2019.06.17-11.56.08:332][  0]LogShaderCompilers: Guid format shader working directory is 16 characters bigger than the processId version (../../../../../782071/UoP_GJ_ADPD/Intermediate/Shaders/WorkingDirectory/3000/).
-[2019.06.17-11.56.08:332][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/up782071/AppData/Local/Temp/UnrealShaderWorkingDir/7D3922584F0F1BFB96D9489D1279B8C0/'.
-[2019.06.17-11.56.08:540][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2019.06.17-11.56.08:551][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2019.06.17-11.56.08:562][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2019.06.17-11.56.08:573][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2019.06.17-11.56.08:584][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2019.06.17-11.56.08:594][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2019.06.17-11.56.08:605][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2019.06.17-11.56.08:615][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2019.06.17-11.56.08:620][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:682][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.06.17-11.56.08:683][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2019.06.17-11.56.08:738][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.06.17-11.56.08:738][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.06.17-11.56.08:781][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.06.17-11.56.08:781][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.06.17-11.56.08:794][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2019.06.17-11.56.08:804][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2019.06.17-11.56.08:814][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2019.06.17-11.56.08:824][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2019.06.17-11.56.08:831][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.06.17-11.56.08:831][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.06.17-11.56.08:881][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.06.17-11.56.08:881][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.06.17-11.56.08:881][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.06.17-11.56.09:479][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.06.17-11.56.09:535][  0]LogDerivedDataCache: Loaded boot cache 0.06s 85MB C:/Users/up782071/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
-[2019.06.17-11.56.09:536][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/up782071/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
-[2019.06.17-11.56.09:536][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../782071/UoP_GJ_ADPD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.06.17-11.56.09:536][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.06.17-11.56.09:536][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../782071/UoP_GJ_ADPD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.06.17-11.56.09:536][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.06.17-11.56.09:549][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.06.17-11.56.09:561][  0]LogDerivedDataCache: Using Local data cache path C:/Users/up782071/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.06.17-11.56.09:561][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.06.17-11.56.09:561][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.06.17-11.56.09:577][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.06.17-11.56.09:578][  0]LogSlate: Using FreeType 2.6.0
-[2019.06.17-11.56.09:578][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.06.17-11.56.09:645][  0]LogAssetRegistry: FAssetRegistry took 0.0258 seconds to start up
-[2019.06.17-11.56.09:892][  0]LogInit: Selected Device Profile: [Windows]
-[2019.06.17-11.56.09:997][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2019.06.17-11.56.10:000][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2019.06.17-11.56.10:000][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2019.06.17-11.56.10:000][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.06.17-11.56.10:000][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2019.06.17-11.56.10:017][  0]LogNetVersion: UoP_GJ_ADPD 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 1957226317)
-[2019.06.17-11.56.10:407][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.067274 seconds
-[2019.06.17-11.56.10:412][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
-[2019.06.17-11.56.10:412][  0]LogUObjectAllocator: 6690872 out of 0 bytes used by permanent object pool.
-[2019.06.17-11.56.10:412][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.06.17-11.56.11:087][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.06.17-11.56.11:099][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.06.17-11.56.11:519][  0]SourceControl: Source control is disabled
-[2019.06.17-11.56.11:519][  0]SourceControl: Source control is disabled
-[2019.06.17-11.56.11:520][  0]SourceControl: Source control is disabled
-[2019.06.17-11.56.11:521][  0]SourceControl: Source control is disabled
-[2019.06.17-11.56.11:663][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.06.17-11.56.11:696][  0]LogOcInput: OculusInput pre-init called
-[2019.06.17-11.56.11:746][  0]LogEngine: Initializing Engine...
-[2019.06.17-11.56.11:747][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.06.17-11.56.11:748][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.06.17-11.56.11:748][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.06.17-11.56.11:748][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.06.17-11.56.11:748][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.06.17-11.56.11:914][  0]LogInit: Initializing FReadOnlyCVARCache
-[2019.06.17-11.56.11:925][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.06.17-11.56.11:938][  0]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2019.06.17-11.56.11:960][  0]LogInit: FAudioDevice initialized.
-[2019.06.17-11.56.11:960][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2019.06.17-11.56.12:035][  0]LogDerivedDataCache: Saved boot cache 0.07s 71MB C:/Users/up782071/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
-[2019.06.17-11.56.12:044][  0]LogInit: Texture streaming: Enabled
-[2019.06.17-11.56.12:058][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.06.17-11.56.12:067][  0]LogInit: Transaction tracking system initialized
-[2019.06.17-11.56.12:084][  0]BlueprintLog: New page: Editor Load
-[2019.06.17-11.56.12:140][  0]LocalizationService: Localization service is disabled
-[2019.06.17-11.56.12:336][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.06.17-11.56.12:336][  0]LogCook: Display: Mobile HDR setting 1
-[2019.06.17-11.56.12:336][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2019.06.17-11.56.12:336][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.06.17-11.56.12:336][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.06.17-11.56.12:336][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.06.17-11.56.12:337][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.06.17-11.56.12:526][  0]LogFileCache: Scanning file cache for directory 'D:/782071/UoP_GJ_ADPD/Content/' took 0.01s
-[2019.06.17-11.56.12:526][  0]SourceControl: Source control is disabled
-[2019.06.17-11.56.12:526][  0]Cmd: MAP LOAD FILE="../../../../../782071/UoP_GJ_ADPD/Content/TopDownBP/Maps/TopDownExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.06.17-11.56.12:526][  0]LightingResults: New page: Lighting Build
-[2019.06.17-11.56.12:529][  0]MapCheck: New page: Map Check
-[2019.06.17-11.56.12:529][  0]LightingResults: New page: Lighting Build
-[2019.06.17-11.56.12:901][  0]LogAIModule: Creating AISystem for world TopDownExampleMap
-[2019.06.17-11.56.12:907][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.06.17-11.56.12:927][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.06.17-11.56.12:969][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 42.178ms to complete.
-[2019.06.17-11.56.12:969][  0]LogFileHelpers: Loading map 'TopDownExampleMap' took 0.443
-[2019.06.17-11.56.13:058][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2019.06.17-11.56.13:114][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.17-11.56.13:120][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.17-11.56.13:127][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.17-11.56.13:134][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.17-11.56.13:139][  0]LogCollectionManager: Loaded 0 collections in 0.001294 seconds
-[2019.06.17-11.56.13:177][  0]LogFileCache: Scanning file cache for directory 'D:/782071/UoP_GJ_ADPD/Saved/Collections/' took 0.01s
-[2019.06.17-11.56.13:177][  0]LogFileCache: Scanning file cache for directory 'D:/782071/UoP_GJ_ADPD/Content/Developers/up782071/Collections/' took 0.01s
-[2019.06.17-11.56.13:177][  0]LogFileCache: Scanning file cache for directory 'D:/782071/UoP_GJ_ADPD/Content/Collections/' took 0.01s
-[2019.06.17-11.56.13:177][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2019.06.17-11.56.13:184][  0]LogContentBrowser: Native class hierarchy populated in 0.0074 seconds. Added 2581 classes and 608 folders.
-[2019.06.17-11.56.13:189][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.06.17-11.56.13:219][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2019.06.17-11.56.13:223][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
-[2019.06.17-11.56.14:032][  0]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
-[2019.06.17-11.56.14:057][  0]LogDirectoryWatcher: Warning: Failed to begin reading directory changes for ../../../../../782071/UoP_GJ_ADPD/Plugins/. Error: The system cannot find the file specified. (0x00000002)
-[2019.06.17-11.56.14:063][  0]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.UoPGJADPD
-[2019.06.17-11.56.14:063][  0]LogTemp: CWD: D:\Unreal\UE_4.20\Engine\Binaries\DotNET\IOS
-[2019.06.17-11.56.14:063][  0]LogTemp: Initial Dir: D:\Unreal\UE_4.20
-[2019.06.17-11.56.14:063][  0]LogTemp: Env CWD: D:\Unreal\UE_4.20\Engine\Binaries\DotNET\IOS
-[2019.06.17-11.56.14:063][  0]LogSlate: Took 0.000211 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2019.06.17-11.56.14:065][  0]LogSlate: Took 0.000187 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2019.06.17-11.56.14:071][  0]LogTemp: BranchPath = W0DEL-1-125D-16/D/Unreal/UE_4.20/Engine/Binaries --- GameBranchPath = W0DEL-1-125D-16/D/Unreal/UE_4.20/Engine/Binaries
-[2019.06.17-11.56.14:071][  0]LogSlate: Took 0.000530 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2019.06.17-11.56.14:137][  0]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\up782071\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
-[2019.06.17-11.56.14:137][  0]LogRenderer: Reallocating scene render targets to support 1208x576 Format 10 NumSamples 1 (Frame:1).
-[2019.06.17-11.56.14:246][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2019.06.17-11.56.14:246][  0]LogLoad: (Engine Initialization) Total time: 8.69 seconds
-[2019.06.17-11.56.14:246][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2019.06.17-11.56.14:284][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2019.06.17-11.56.14:301][  0]LogSlate: Took 0.000138 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.06.17-11.56.14:331][  1]LogAssetRegistry: Asset discovery search completed in 4.7092 seconds
-[2019.06.17-11.56.14:333][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2019.06.17-11.56.14:333][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000059 seconds (updated 0 objects)
-[2019.06.17-11.56.16:719][282]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.17-11.56.16:760][287]LogSlate: Window 'Plugins' being destroyed
-[2019.06.17-11.56.16:763][287]LogSlate: Window 'Plugins' being destroyed
-[2019.06.17-11.56.16:763][287]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
-[2019.06.17-11.56.21:887][902]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.17-11.56.23:206][ 54]LogEditorActor: Deleted Actor: Character
-[2019.06.17-11.56.23:224][ 54]LogEditorActor: Deleted 1 Actors (0.022 secs)
-[2019.06.17-11.56.29:398][784]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.17-11.56.29:864][840]LogTemp: Repeating last play command: Selected Viewport
-[2019.06.17-11.56.29:874][840]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2019.06.17-11.56.29:874][840]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.17-11.56.29:886][840]PIE: New page: PIE session: TopDownExampleMap (17 Jun 2019 13:56:29)
-[2019.06.17-11.56.29:886][840]LogPlayLevel: Creating play world package: /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap
-[2019.06.17-11.56.29:896][840]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009781s)
-[2019.06.17-11.56.29:897][840]LogAIModule: Creating AISystem for world TopDownExampleMap
-[2019.06.17-11.56.29:897][840]LogPlayLevel: PIE: World Init took: (0.000850s)
-[2019.06.17-11.56.29:897][840]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap to /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap.TopDownExampleMap (0.010801s)
-[2019.06.17-11.56.29:921][840]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2019.06.17-11.56.29:930][840]LogInit: FAudioDevice initialized.
-[2019.06.17-11.56.29:972][840]LogLoad: Game class is 'TopDownGameMode_C'
-[2019.06.17-11.56.29:975][840]LogWorld: Bringing World /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap.TopDownExampleMap up for play (max tick rate 0) at 2019.06.17-12.56.29
-[2019.06.17-11.56.29:975][840]LogWorld: Bringing up level for play took: 0.001879
-[2019.06.17-11.56.29:991][840]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0002 seconds. Added 10 classes and 0 folders.
-[2019.06.17-11.56.29:991][840]PIE: Play in editor start time for /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap 1.025
-[2019.06.17-11.56.29:991][840]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2019.06.17-11.56.30:867][943]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2019.06.17-11.56.30:867][943]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.17-11.56.30:898][943]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.17-11.56.30:898][943]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2019.06.17-11.56.30:918][943]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.17-11.56.30:970][949]LogPlayLevel: Display: Destroying online subsystem :Context_4
-[2019.06.17-11.56.34:280][345]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2019.06.17-11.56.39:824][  4]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.17-11.56.41:037][144]LogSlate: Took 0.000128 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.06.17-11.56.41:048][144]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/Blueprints/TopDownGameMode" FILE="../../../../../782071/UoP_GJ_ADPD/Content/TopDownBP/Blueprints/TopDownGameMode.uasset" SILENT=true
-[2019.06.17-11.56.41:059][144]LogSavePackage: Moving '../../../../../782071/UoP_GJ_ADPD/Saved/TopDownGameMode9CB94A82484966C1082FACB31160388D.tmp' to '../../../../../782071/UoP_GJ_ADPD/Content/TopDownBP/Blueprints/TopDownGameMode.uasset'
-[2019.06.17-11.57.33:160][519]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/TopDownBP/Blueprints/TopDownGameMode.TopDownGameMode
-[2019.06.17-11.57.33:499][519]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 116 classes and 0 folders.
-[2019.06.17-11.57.36:568][816]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
-[2019.06.17-11.57.41:010][346]BlueprintLog: New page: Compile TopDownGameMode
-[2019.06.17-11.57.42:495][511]LogTemp: Repeating last play command: Selected Viewport
-[2019.06.17-11.57.42:539][511]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2019.06.17-11.57.42:539][511]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.17-11.57.42:539][511]PIE: New page: PIE session: TopDownExampleMap (17 Jun 2019 13:57:42)
-[2019.06.17-11.57.42:539][511]LogPlayLevel: Creating play world package: /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap
-[2019.06.17-11.57.42:549][511]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009866s)
-[2019.06.17-11.57.42:550][511]LogAIModule: Creating AISystem for world TopDownExampleMap
-[2019.06.17-11.57.42:550][511]LogPlayLevel: PIE: World Init took: (0.000899s)
-[2019.06.17-11.57.42:550][511]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap to /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap.TopDownExampleMap (0.010901s)
-[2019.06.17-11.57.42:577][511]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2019.06.17-11.57.42:586][511]LogInit: FAudioDevice initialized.
-[2019.06.17-11.57.42:615][511]LogLoad: Game class is 'TopDownGameMode_C'
-[2019.06.17-11.57.42:617][511]LogWorld: Bringing World /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap.TopDownExampleMap up for play (max tick rate 0) at 2019.06.17-12.57.42
-[2019.06.17-11.57.42:618][511]LogWorld: Bringing up level for play took: 0.001598
-[2019.06.17-11.57.42:631][511]PIE: Play in editor start time for /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap -0.336
-[2019.06.17-11.57.42:631][511]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2019.06.17-11.57.48:161][173]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.17-11.57.48:237][182]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2019.06.17-11.57.48:237][182]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.17-11.57.48:268][182]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.17-11.57.48:268][182]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2019.06.17-11.57.48:293][182]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.17-11.57.48:337][187]LogPlayLevel: Display: Destroying online subsystem :Context_7
-[2019.06.17-11.57.55:028][982]LogEditorViewport: Clicking on Actor (LMB): TopDownCharacter_C (TopDownCharacter)
-[2019.06.17-11.58.13:823][901]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.17-11.58.14:977][ 35]LogSlate: Took 0.000149 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2019.06.17-12.06.04:404][838]LogSlate: Window 'Save Content' being destroyed
-[2019.06.17-12.06.04:453][838]LogSlate: Window 'UoP_GJ_ADPD - Unreal Editor' being destroyed
-[2019.06.17-12.06.04:610][839]Cmd: QUIT_EDITOR
-[2019.06.17-12.06.05:107][839]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2019.06.17-12.06.05:126][839]LogExit: Preparing to exit.
-[2019.06.17-12.06.05:372][839]LogExit: Editor shut down
-[2019.06.17-12.06.05:373][839]LogExit: Transaction tracking system shut down
-[2019.06.17-12.06.05:923][839]LogExit: Object subsystem successfully closed.
-[2019.06.17-12.06.05:945][839]LogShaderCompilers: Display: Shaders left to compile 0
-[2019.06.17-12.06.05:948][839]LogD3D11RHI: Shutdown
-[2019.06.17-12.06.05:948][839]LogD3D11RHI: CleanupD3DDevice
-[2019.06.17-12.06.05:950][839]LogD3D11RHI: ~FD3D11DynamicRHI
-[2019.06.17-12.06.05:978][839]LogModuleManager: Shutting down and abandoning module BlueprintGraph (622)
-[2019.06.17-12.06.05:978][839]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (620)
-[2019.06.17-12.06.05:978][839]LogModuleManager: Shutting down and abandoning module Voice (618)
-[2019.06.17-12.06.05:978][839]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (616)
-[2019.06.17-12.06.05:978][839]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (614)
-[2019.06.17-12.06.05:978][839]LogModuleManager: Shutting down and abandoning module SceneOutliner (612)
-[2019.06.17-12.06.05:978][839]LogModuleManager: Shutting down and abandoning module AddContentDialog (610)
-[2019.06.17-12.06.05:979][839]LogModuleManager: Shutting down and abandoning module WidgetCarousel (609)
-[2019.06.17-12.06.05:980][839]LogModuleManager: Shutting down and abandoning module EditorWidgets (606)
-[2019.06.17-12.06.05:980][839]LogModuleManager: Shutting down and abandoning module CollectionManager (604)
-[2019.06.17-12.06.05:980][839]LogModuleManager: Shutting down and abandoning module StatsViewer (602)
-[2019.06.17-12.06.05:980][839]LogModuleManager: Shutting down and abandoning module FoliageEdit (600)
-[2019.06.17-12.06.05:980][839]LogModuleManager: Shutting down and abandoning module LandscapeEditor (598)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module MeshPaintMode (596)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (594)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module ActorPickerMode (592)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module GeometryMode (590)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module TextureAlignMode (588)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module BspMode (586)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (584)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (582)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module AutomationWorker (580)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (578)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module SequenceRecorder (577)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (574)
-[2019.06.17-12.06.05:981][839]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (572)
-[2019.06.17-12.06.05:982][839]LogModuleManager: Shutting down and abandoning module PlacementMode (571)
-[2019.06.17-12.06.05:982][839]LogModuleManager: Shutting down and abandoning module MaterialEditor (570)
-[2019.06.17-12.06.05:982][839]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (566)
-[2019.06.17-12.06.05:982][839]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (564)
-[2019.06.17-12.06.05:982][839]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (562)
-[2019.06.17-12.06.05:982][839]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (560)
-[2019.06.17-12.06.05:982][839]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (558)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (556)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (554)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (552)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (550)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (548)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (546)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (544)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (542)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module CharacterAI (540)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module SmartSnapping (538)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module SessionServices (536)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module ViewportSnapping (534)
-[2019.06.17-12.06.05:983][839]LogModuleManager: Shutting down and abandoning module ViewportInteraction (532)
-[2019.06.17-12.06.05:984][839]LogModuleManager: Shutting down and abandoning module ClothPainter (530)
-[2019.06.17-12.06.05:984][839]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (529)
-[2019.06.17-12.06.05:984][839]LogModuleManager: Shutting down and abandoning module LogVisualizer (526)
-[2019.06.17-12.06.05:984][839]LogModuleManager: Shutting down and abandoning module IntroTutorials (524)
-[2019.06.17-12.06.05:984][839]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (523)
-[2019.06.17-12.06.05:984][839]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (520)
-[2019.06.17-12.06.05:985][839]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (518)
-[2019.06.17-12.06.05:985][839]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (516)
-[2019.06.17-12.06.05:985][839]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (514)
-[2019.06.17-12.06.05:985][839]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (513)
-[2019.06.17-12.06.06:400][839]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (510)
-[2019.06.17-12.06.06:400][839]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (508)
-[2019.06.17-12.06.06:400][839]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (506)
-[2019.06.17-12.06.06:400][839]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (504)
-[2019.06.17-12.06.06:400][839]LogModuleManager: Shutting down and abandoning module InputBindingEditor (502)
-[2019.06.17-12.06.06:400][839]LogModuleManager: Shutting down and abandoning module MergeActors (500)
-[2019.06.17-12.06.06:400][839]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (498)
-[2019.06.17-12.06.06:400][839]LogModuleManager: Shutting down and abandoning module LocalizationService (497)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module HardwareTargeting (494)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (492)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module UndoHistory (490)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module XmlParser (488)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module Blutility (486)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (484)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (483)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (480)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module SettingsEditor (478)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module ProjectLauncher (476)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module SessionFrontend (474)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module ProfilerClient (472)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module DeviceManager (470)
-[2019.06.17-12.06.06:401][839]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (469)
-[2019.06.17-12.06.06:466][839]LogModuleManager: Shutting down and abandoning module AutomationController (466)
-[2019.06.17-12.06.06:466][839]LogModuleManager: Shutting down and abandoning module AutomationWindow (464)
-[2019.06.17-12.06.06:466][839]LogModuleManager: Shutting down and abandoning module Layers (462)
-[2019.06.17-12.06.06:466][839]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (460)
-[2019.06.17-12.06.06:466][839]LogModuleManager: Shutting down and abandoning module DetailCustomizations (458)
-[2019.06.17-12.06.06:466][839]LogModuleManager: Shutting down and abandoning module PackagesDialog (456)
-[2019.06.17-12.06.06:466][839]LogModuleManager: Shutting down and abandoning module Persona (454)
-[2019.06.17-12.06.06:466][839]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (453)
-[2019.06.17-12.06.06:466][839]LogModuleManager: Shutting down and abandoning module AnimGraph (451)
-[2019.06.17-12.06.06:467][839]LogModuleManager: Shutting down and abandoning module Kismet (448)
-[2019.06.17-12.06.06:472][839]LogModuleManager: Shutting down and abandoning module GraphEditor (446)
-[2019.06.17-12.06.06:472][839]LogModuleManager: Shutting down and abandoning module ClassViewer (444)
-[2019.06.17-12.06.06:474][839]LogModuleManager: Shutting down and abandoning module Toolbox (442)
-[2019.06.17-12.06.06:474][839]LogModuleManager: Shutting down and abandoning module ModuleUI (440)
-[2019.06.17-12.06.06:474][839]LogModuleManager: Shutting down and abandoning module MovieSceneTools (438)
-[2019.06.17-12.06.06:474][839]LogModuleManager: Shutting down and abandoning module OutputLog (436)
-[2019.06.17-12.06.06:474][839]LogModuleManager: Shutting down and abandoning module GammaUI (434)
-[2019.06.17-12.06.06:474][839]LogModuleManager: Shutting down and abandoning module Documentation (432)
-[2019.06.17-12.06.06:474][839]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (430)
-[2019.06.17-12.06.06:474][839]LogModuleManager: Shutting down and abandoning module MovieScene (428)
-[2019.06.17-12.06.06:474][839]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (426)
-[2019.06.17-12.06.06:474][839]LogModuleManager: Shutting down and abandoning module LauncherPlatform (424)
-[2019.06.17-12.06.06:474][839]LogModuleManager: Shutting down and abandoning module AnalyticsET (422)
-[2019.06.17-12.06.06:475][839]LogModuleManager: Shutting down and abandoning module PortalServices (420)
-[2019.06.17-12.06.06:475][839]LogModuleManager: Shutting down and abandoning module PortalRpc (418)
-[2019.06.17-12.06.06:475][839]LogModuleManager: Shutting down and abandoning module MessagingRpc (416)
-[2019.06.17-12.06.06:475][839]LogModuleManager: Shutting down and abandoning module AIModule (414)
-[2019.06.17-12.06.06:475][839]LogModuleManager: Shutting down and abandoning module GameplayDebugger (413)
-[2019.06.17-12.06.06:475][839]LogModuleManager: Shutting down and abandoning module AITestSuite (411)
-[2019.06.17-12.06.06:475][839]LogModuleManager: Shutting down and abandoning module NavigationSystem (409)
-[2019.06.17-12.06.06:475][839]LogModuleManager: Shutting down and abandoning module DesktopPlatform (406)
-[2019.06.17-12.06.06:475][839]LogModuleManager: Shutting down and abandoning module ProfilerService (404)
-[2019.06.17-12.06.06:724][839]LogModuleManager: Shutting down and abandoning module TaskGraph (402)
-[2019.06.17-12.06.06:724][839]LogModuleManager: Shutting down and abandoning module SteamVRController (400)
-[2019.06.17-12.06.06:724][839]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (398)
-[2019.06.17-12.06.06:724][839]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (396)
-[2019.06.17-12.06.06:724][839]LogModuleManager: Shutting down and abandoning module OculusInput (394)
-[2019.06.17-12.06.06:724][839]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (392)
-[2019.06.17-12.06.06:724][839]LogModuleManager: Shutting down and abandoning module EditableMesh (390)
-[2019.06.17-12.06.06:724][839]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (388)
-[2019.06.17-12.06.06:725][839]LogModuleManager: Shutting down and abandoning module CableComponent (386)
-[2019.06.17-12.06.06:725][839]LogModuleManager: Shutting down and abandoning module AudioCapture (384)
-[2019.06.17-12.06.06:725][839]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (382)
-[2019.06.17-12.06.06:725][839]LogModuleManager: Shutting down and abandoning module AndroidPermission (380)
-[2019.06.17-12.06.06:725][839]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (378)
-[2019.06.17-12.06.06:725][839]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (376)
-[2019.06.17-12.06.06:725][839]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (374)
-[2019.06.17-12.06.06:725][839]LogModuleManager: Shutting down and abandoning module MediaCompositing (372)
-[2019.06.17-12.06.06:725][839]LogModuleManager: Shutting down and abandoning module LinearTimecode (370)
-[2019.06.17-12.06.06:725][839]LogModuleManager: Shutting down and abandoning module ImgMedia (368)
-[2019.06.17-12.06.06:734][839]LogModuleManager: Shutting down and abandoning module HTML5Networking (366)
-[2019.06.17-12.06.06:734][839]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (364)
-[2019.06.17-12.06.06:734][839]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (362)
-[2019.06.17-12.06.06:734][839]LogModuleManager: Shutting down and abandoning module BackChannel (360)
-[2019.06.17-12.06.06:734][839]LogModuleManager: Shutting down and abandoning module AppleVision (358)
-[2019.06.17-12.06.06:734][839]LogModuleManager: Shutting down and abandoning module AppleImageUtils (356)
-[2019.06.17-12.06.06:734][839]LogModuleManager: Shutting down and abandoning module AlembicImporter (354)
-[2019.06.17-12.06.06:734][839]LogModuleManager: Shutting down and abandoning module AlembicLibrary (353)
-[2019.06.17-12.06.06:734][839]LogModuleManager: Shutting down and abandoning module GeometryCache (352)
-[2019.06.17-12.06.06:734][839]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (351)
-[2019.06.17-12.06.06:735][839]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (346)
-[2019.06.17-12.06.06:735][839]LogModuleManager: Shutting down and abandoning module DatasmithContent (344)
-[2019.06.17-12.06.06:735][839]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (342)
-[2019.06.17-12.06.06:735][839]LogModuleManager: Shutting down and abandoning module PluginBrowser (340)
-[2019.06.17-12.06.06:736][839]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (338)
-[2019.06.17-12.06.06:736][839]LogModuleManager: Shutting down and abandoning module PolygonModeling (336)
-[2019.06.17-12.06.06:736][839]LogModuleManager: Shutting down and abandoning module MeshEditor (334)
-[2019.06.17-12.06.06:736][839]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (332)
-[2019.06.17-12.06.06:736][839]LogModuleManager: Shutting down and abandoning module CryptoKeys (330)
-[2019.06.17-12.06.06:736][839]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (328)
-[2019.06.17-12.06.06:736][839]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (326)
-[2019.06.17-12.06.06:736][839]LogModuleManager: Shutting down and abandoning module UObjectPlugin (324)
-[2019.06.17-12.06.06:736][839]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (322)
-[2019.06.17-12.06.06:737][839]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (320)
-[2019.06.17-12.06.06:737][839]LogModuleManager: Shutting down and abandoning module GitSourceControl (318)
-[2019.06.17-12.06.06:737][839]LogModuleManager: Shutting down and abandoning module SourceControl (317)
-[2019.06.17-12.06.06:737][839]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (314)
-[2019.06.17-12.06.06:737][839]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (312)
-[2019.06.17-12.06.06:737][839]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (310)
-[2019.06.17-12.06.06:737][839]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (308)
-[2019.06.17-12.06.06:737][839]LogModuleManager: Shutting down and abandoning module Paper2DEditor (306)
-[2019.06.17-12.06.06:737][839]LogModuleManager: Shutting down and abandoning module MeshPaint (305)
-[2019.06.17-12.06.06:737][839]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (302)
-[2019.06.17-12.06.06:738][839]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (300)
-[2019.06.17-12.06.06:738][839]LogModuleManager: Shutting down and abandoning module PhysXVehicles (298)
-[2019.06.17-12.06.06:738][839]LogModuleManager: Shutting down and abandoning module OculusEditor (296)
-[2019.06.17-12.06.06:738][839]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (294)
-[2019.06.17-12.06.06:738][839]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (292)
-[2019.06.17-12.06.06:738][839]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (290)
-[2019.06.17-12.06.06:738][839]LogModuleManager: Shutting down and abandoning module ApexDestructionEditor (288)
-[2019.06.17-12.06.06:738][839]LogModuleManager: Shutting down and abandoning module ApexDestruction (286)
-[2019.06.17-12.06.06:739][839]LogModuleManager: Shutting down and abandoning module ActorSequence (284)
-[2019.06.17-12.06.06:739][839]LogModuleManager: Shutting down and abandoning module UdpMessaging (282)
-[2019.06.17-12.06.06:840][839]LogModuleManager: Shutting down and abandoning module TcpMessaging (280)
-[2019.06.17-12.06.06:941][839]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (278)
-[2019.06.17-12.06.06:941][839]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (276)
-[2019.06.17-12.06.06:941][839]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (274)
-[2019.06.17-12.06.06:941][839]LogModuleManager: Shutting down and abandoning module FacialAnimation (272)
-[2019.06.17-12.06.06:941][839]LogModuleManager: Shutting down and abandoning module DataValidation (270)
-[2019.06.17-12.06.06:941][839]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (268)
-[2019.06.17-12.06.06:942][839]LogModuleManager: Shutting down and abandoning module LevelEditor (267)
-[2019.06.17-12.06.06:944][839]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (266)
-[2019.06.17-12.06.06:944][839]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (264)
-[2019.06.17-12.06.06:944][839]LogModuleManager: Shutting down and abandoning module MainFrame (262)
-[2019.06.17-12.06.06:945][839]LogModuleManager: Shutting down and abandoning module HotReload (261)
-[2019.06.17-12.06.06:946][839]LogModuleManager: Shutting down and abandoning module ContentBrowser (257)
-[2019.06.17-12.06.06:948][839]LogModuleManager: Shutting down and abandoning module TreeMap (255)
-[2019.06.17-12.06.06:948][839]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (252)
-[2019.06.17-12.06.06:948][839]LogModuleManager: Shutting down and abandoning module AISupportModule (250)
-[2019.06.17-12.06.06:949][839]LogModuleManager: Shutting down and abandoning module Paper2D (248)
-[2019.06.17-12.06.06:949][839]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (246)
-[2019.06.17-12.06.06:949][839]LogModuleManager: Shutting down and abandoning module WmfMedia (244)
-[2019.06.17-12.06.06:949][839]LogModuleManager: Shutting down and abandoning module Media (243)
-[2019.06.17-12.06.06:957][839]LogModuleManager: Shutting down and abandoning module PacketHandler (240)
-[2019.06.17-12.06.06:957][839]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (238)
-[2019.06.17-12.06.06:957][839]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (236)
-[2019.06.17-12.06.06:957][839]LogModuleManager: Shutting down and abandoning module MediaAssets (234)
-[2019.06.17-12.06.06:957][839]LogModuleManager: Shutting down and abandoning module Overlay (232)
-[2019.06.17-12.06.06:957][839]LogModuleManager: Shutting down and abandoning module OverlayEditor (231)
-[2019.06.17-12.06.06:958][839]LogModuleManager: Shutting down and abandoning module VREditor (228)
-[2019.06.17-12.06.06:958][839]LogModuleManager: Shutting down and abandoning module StringTableEditor (226)
-[2019.06.17-12.06.06:958][839]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (224)
-[2019.06.17-12.06.06:958][839]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (222)
-[2019.06.17-12.06.06:958][839]LogModuleManager: Shutting down and abandoning module FunctionalTesting (220)
-[2019.06.17-12.06.06:958][839]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (218)
-[2019.06.17-12.06.06:958][839]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (217)
-[2019.06.17-12.06.06:958][839]LogModuleManager: Shutting down and abandoning module UMG (214)
-[2019.06.17-12.06.06:958][839]LogModuleManager: Shutting down and abandoning module UMGEditor (213)
-[2019.06.17-12.06.06:959][839]LogModuleManager: Shutting down and abandoning module Sequencer (212)
-[2019.06.17-12.06.06:959][839]LogModuleManager: Shutting down and abandoning module MessageLog (209)
-[2019.06.17-12.06.06:959][839]LogModuleManager: Shutting down and abandoning module SlateReflector (204)
-[2019.06.17-12.06.06:959][839]LogModuleManager: Shutting down and abandoning module Slate (202)
-[2019.06.17-12.06.06:959][839]LogModuleManager: Shutting down and abandoning module EditorStyle (200)
-[2019.06.17-12.06.06:964][839]LogModuleManager: Shutting down and abandoning module MRMesh (198)
-[2019.06.17-12.06.06:964][839]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (196)
-[2019.06.17-12.06.06:965][839]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (194)
-[2019.06.17-12.06.06:965][839]LogModuleManager: Shutting down and abandoning module XAudio2 (192)
-[2019.06.17-12.06.06:965][839]LogModuleManager: Shutting down and abandoning module Networking (190)
-[2019.06.17-12.06.06:965][839]LogModuleManager: Shutting down and abandoning module Core (188)
-[2019.06.17-12.06.06:965][839]LogModuleManager: Shutting down and abandoning module LevelSequence (186)
-[2019.06.17-12.06.06:965][839]LogModuleManager: Shutting down and abandoning module KismetCompiler (184)
-[2019.06.17-12.06.06:965][839]LogModuleManager: Shutting down and abandoning module MeshUtilities (182)
-[2019.06.17-12.06.06:965][839]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (181)
-[2019.06.17-12.06.06:965][839]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (180)
-[2019.06.17-12.06.06:965][839]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (179)
-[2019.06.17-12.06.06:965][839]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (177)
-[2019.06.17-12.06.06:966][839]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (175)
-[2019.06.17-12.06.06:966][839]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (173)
-[2019.06.17-12.06.06:966][839]LogModuleManager: Shutting down and abandoning module MaterialBaking (169)
-[2019.06.17-12.06.06:966][839]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (165)
-[2019.06.17-12.06.06:966][839]LogModuleManager: Shutting down and abandoning module DerivedDataCache (162)
-[2019.06.17-12.06.07:013][839]LogDerivedDataCache: Shutdown
-[2019.06.17-12.06.07:013][839]LogModuleManager: Shutting down and abandoning module XGEController (160)
-[2019.06.17-12.06.07:013][839]LogModuleManager: Shutting down and abandoning module TargetPlatform (158)
-[2019.06.17-12.06.07:013][839]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (157)
-[2019.06.17-12.06.07:013][839]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (155)
-[2019.06.17-12.06.07:013][839]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (153)
-[2019.06.17-12.06.07:014][839]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (151)
-[2019.06.17-12.06.07:014][839]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (149)
-[2019.06.17-12.06.07:014][839]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (147)
-[2019.06.17-12.06.07:014][839]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (145)
-[2019.06.17-12.06.07:014][839]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (143)
-[2019.06.17-12.06.07:014][839]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (141)
-[2019.06.17-12.06.07:014][839]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (139)
-[2019.06.17-12.06.07:014][839]LogModuleManager: Shutting down and abandoning module ImageWrapper (138)
-[2019.06.17-12.06.07:014][839]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (135)
-[2019.06.17-12.06.07:014][839]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (133)
-[2019.06.17-12.06.07:014][839]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (131)
-[2019.06.17-12.06.07:015][839]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (129)
-[2019.06.17-12.06.07:015][839]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (127)
-[2019.06.17-12.06.07:015][839]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (125)
-[2019.06.17-12.06.07:015][839]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (123)
-[2019.06.17-12.06.07:015][839]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (121)
-[2019.06.17-12.06.07:015][839]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (119)
-[2019.06.17-12.06.07:015][839]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (117)
-[2019.06.17-12.06.07:017][839]LogModuleManager: Shutting down and abandoning module Messaging (115)
-[2019.06.17-12.06.07:017][839]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (113)
-[2019.06.17-12.06.07:019][839]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (111)
-[2019.06.17-12.06.07:019][839]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (109)
-[2019.06.17-12.06.07:036][839]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (107)
-[2019.06.17-12.06.07:036][839]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (105)
-[2019.06.17-12.06.07:037][839]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (103)
-[2019.06.17-12.06.07:037][839]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (101)
-[2019.06.17-12.06.07:037][839]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (99)
-[2019.06.17-12.06.07:037][839]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (97)
-[2019.06.17-12.06.07:037][839]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (95)
-[2019.06.17-12.06.07:037][839]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (93)
-[2019.06.17-12.06.07:037][839]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (91)
-[2019.06.17-12.06.07:037][839]LogModuleManager: Shutting down and abandoning module InputCore (88)
-[2019.06.17-12.06.07:037][839]LogModuleManager: Shutting down and abandoning module Settings (86)
-[2019.06.17-12.06.07:037][839]LogModuleManager: Shutting down and abandoning module PhysXCooking (84)
-[2019.06.17-12.06.07:038][839]LogModuleManager: Shutting down and abandoning module SteamVR (82)
-[2019.06.17-12.06.07:038][839]LogModuleManager: Shutting down and abandoning module OculusHMD (80)
-[2019.06.17-12.06.07:038][839]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (78)
-[2019.06.17-12.06.07:038][839]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (76)
-[2019.06.17-12.06.07:038][839]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (74)
-[2019.06.17-12.06.07:038][839]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (70)
-[2019.06.17-12.06.07:040][839]LogModuleManager: Shutting down and abandoning module XMPP (65)
-[2019.06.17-12.06.07:040][839]LogModuleManager: Shutting down and abandoning module WebSockets (64)
-[2019.06.17-12.06.07:058][839]LogModuleManager: Shutting down and abandoning module HTTP (61)
-[2019.06.17-12.06.07:058][839]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2019.06.17-12.06.07:058][839]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BCC54451C-40CE-9617-F616-F3AB899309DC%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.20.3-4369336%2B%2B%2BUE4%2BRelease-4.20&UserID=567d64ca4e658a3208e9b0b79d0fdd3f%7C2afc1a43e3a3429bbdc5152411915a0d%7C656fe788-1a44-4c45-9b87-4fb9492dbeea&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2019.06.17-12.06.07:074][839]LogModuleManager: Shutting down and abandoning module SSL (60)
-[2019.06.17-12.06.07:075][839]LogModuleManager: Shutting down and abandoning module MagicLeapEmulator (56)
-[2019.06.17-12.06.07:075][839]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (54)
-[2019.06.17-12.06.07:075][839]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (52)
-[2019.06.17-12.06.07:075][839]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (50)
-[2019.06.17-12.06.07:075][839]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (48)
-[2019.06.17-12.06.07:075][839]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (46)
-[2019.06.17-12.06.07:075][839]LogModuleManager: Shutting down and abandoning module MagicLeapGestures (44)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (42)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module MagicLeapController (40)
-[2019.06.17-12.06.07:076][839]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module MagicLeap (38)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2019.06.17-12.06.07:076][839]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2019.06.17-12.06.07:081][839]LogExit: Exiting.
-[2019.06.17-12.06.07:104][839]Log file closed, 06/17/19 13:06:07
+[2019.06.17-21.44.10:899][  0]LogInit: Selected Device Profile: [Windows]
+[2019.06.17-21.44.10:899][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.06.17-21.44.10:906][  0]LogHAL: Display: Platform has ~ 8 GB [8445386752 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.06.17-21.44.10:906][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2019.06.17-21.44.10:906][  0]LogInit: Going up to parent DeviceProfile []
+[2019.06.17-21.44.10:906][  0]LogInit: Computer: DESKTOP-O4V102E
+[2019.06.17-21.44.10:906][  0]LogInit: User: user
+[2019.06.17-21.44.10:906][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.06.17-21.44.10:906][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2019.06.17-21.44.10:907][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2019.06.17-21.44.10:907][  0]LogMemory: Platform Memory Stats for Windows
+[2019.06.17-21.44.10:907][  0]LogMemory: Process Physical Memory: 101.24 MB used, 101.25 MB peak
+[2019.06.17-21.44.10:907][  0]LogMemory: Process Virtual Memory: 92.25 MB used, 92.25 MB peak
+[2019.06.17-21.44.10:907][  0]LogMemory: Physical Memory: 6207.79 MB used,  1846.36 MB free, 8054.15 MB total
+[2019.06.17-21.44.10:907][  0]LogMemory: Virtual Memory: 4616.48 MB used,  1846.36 MB free, 134217728.00 MB total
+[2019.06.17-21.44.10:937][  0]LogInit: Using OS detected language (en-GB).
+[2019.06.17-21.44.10:937][  0]LogInit: Using OS detected locale (en-GB).
+[2019.06.17-21.44.10:938][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2019.06.17-21.44.11:430][  0]LogStreaming: Display: Took  0.493s to InitEngineTextLocalization.
+[2019.06.17-21.44.11:457][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.06.17-21.44.11:457][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.06.17-21.44.11:490][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.06.17-21.44.11:490][  0]LogD3D11RHI: D3D11 adapters:
+[2019.06.17-21.44.11:561][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
+[2019.06.17-21.44.11:561][  0]LogD3D11RHI:       4021/0/4027 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2019.06.17-21.44.11:571][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
+[2019.06.17-21.44.11:571][  0]LogD3D11RHI:       128/0/4027 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2019.06.17-21.44.11:573][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.06.17-21.44.11:573][  0]LogD3D11RHI:       0/0/4027 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.06.17-21.44.11:573][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.06.17-21.44.11:604][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.06.17-21.44.11:605][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
+[2019.06.17-21.44.11:605][  0]LogWindows: EnumDisplayDevices:
+[2019.06.17-21.44.11:605][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
+[2019.06.17-21.44.11:605][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2019.06.17-21.44.11:606][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2019.06.17-21.44.11:606][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2019.06.17-21.44.11:606][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
+[2019.06.17-21.44.11:606][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2019.06.17-21.44.11:606][  0]LogD3D11RHI:      Driver Date: Unknown
+[2019.06.17-21.44.11:606][  0]LogRHI: Texture pool is 2814 MB (70% of 4021 MB)
+[2019.06.17-21.44.11:652][  0]LogD3D11RHI: Async texture creation enabled
+[2019.06.17-21.44.11:670][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2019.06.17-21.44.11:671][  0]LogShaderCompilers: Guid format shader working directory is -12 characters bigger than the processId version (D:/Unreal Projects/GameJamREPO/UOPGameJam2019/UoP_GJ_ADPD/Intermediate/Shaders/WorkingDirectory/9072/).
+[2019.06.17-21.44.11:671][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/user/AppData/Local/Temp/UnrealShaderWorkingDir/89E2FFBB48D69B0F0F67159A326E6BB0/'.
+[2019.06.17-21.44.11:992][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.06.17-21.44.12:007][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.06.17-21.44.12:022][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.06.17-21.44.12:029][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.06.17-21.44.12:029][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.06.17-21.44.12:092][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.06.17-21.44.12:092][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.06.17-21.44.12:092][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.06.17-21.44.12:959][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.06.17-21.44.13:016][  0]LogDerivedDataCache: Loaded boot cache 0.06s 71MB C:/Users/user/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2019.06.17-21.44.13:016][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/user/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
+[2019.06.17-21.44.13:017][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Unreal Projects/GameJamREPO/UOPGameJam2019/UoP_GJ_ADPD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.06.17-21.44.13:017][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.06.17-21.44.13:017][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/Unreal Projects/GameJamREPO/UOPGameJam2019/UoP_GJ_ADPD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.06.17-21.44.13:017][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.06.17-21.44.13:033][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.06.17-21.44.13:046][  0]LogDerivedDataCache: Using Local data cache path C:/Users/user/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.06.17-21.44.13:046][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.06.17-21.44.13:046][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.06.17-21.44.13:067][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.06.17-21.44.13:068][  0]LogSlate: Using FreeType 2.6.0
+[2019.06.17-21.44.13:069][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.06.17-21.44.13:121][  0]LogInit: Using OS detected language (en-GB).
+[2019.06.17-21.44.13:121][  0]LogInit: Using OS detected locale (en-GB).
+[2019.06.17-21.44.13:121][  0]LogTextLocalizationManager: No localization for 'en-GB' exists, so 'en' will be used for the language.
+[2019.06.17-21.44.13:121][  0]LogTextLocalizationManager: No localization for 'en-GB' exists, so 'en' will be used for the locale.
+[2019.06.17-21.44.13:424][  0]LogStreaming: Display: Took  0.302s to InitGameTextLocalization.
+[2019.06.17-21.44.13:895][  0]LogAssetRegistry: FAssetRegistry took 0.4695 seconds to start up
+[2019.06.17-21.44.14:106][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 1 prioritized culture(s) in 0.014741 seconds
+[2019.06.17-21.44.14:221][  0]LogInit: Selected Device Profile: [Windows]
+[2019.06.17-21.44.14:356][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.06.17-21.44.14:360][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.06.17-21.44.14:360][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.06.17-21.44.14:360][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.06.17-21.44.14:360][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.06.17-21.44.14:375][  0]LogNetVersion: UoP_GJ_ADPD 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 1957226317)
+[2019.06.17-21.44.14:928][  0]LogMoviePlayer: Initializing movie player
+[2019.06.17-21.44.15:134][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.06.17-21.44.15:147][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.06.17-21.44.15:223][  0]LogCollectionManager: Loaded 0 collections in 0.002510 seconds
+[2019.06.17-21.44.15:262][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal Projects/GameJamREPO/UOPGameJam2019/UoP_GJ_ADPD/Saved/Collections/' took 0.01s
+[2019.06.17-21.44.15:262][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal Projects/GameJamREPO/UOPGameJam2019/UoP_GJ_ADPD/Content/Developers/user/Collections/' took 0.01s
+[2019.06.17-21.44.15:262][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000003 seconds (found 0 objects)
+[2019.06.17-21.44.15:262][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal Projects/GameJamREPO/UOPGameJam2019/UoP_GJ_ADPD/Content/Collections/' took 0.01s
+[2019.06.17-21.44.15:262][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000351 seconds (updated 0 objects)
+[2019.06.17-21.44.15:300][  0]SourceControl: Source control is disabled
+[2019.06.17-21.44.15:300][  0]SourceControl: Source control is disabled
+[2019.06.17-21.44.15:301][  0]SourceControl: Source control is disabled
+[2019.06.17-21.44.15:429][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.06.17-21.44.15:506][  0]LogOcInput: OculusInput pre-init called
+[2019.06.17-21.44.15:516][  0]LogUObjectArray: 42301 objects as part of root set at end of initial load.
+[2019.06.17-21.44.15:516][  0]LogUObjectAllocator: 7462280 out of 0 bytes used by permanent object pool.
+[2019.06.17-21.44.15:516][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.06.17-21.44.15:572][  0]LogEngine: Initializing Engine...
+[2019.06.17-21.44.15:573][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.06.17-21.44.15:586][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.06.17-21.44.15:586][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.06.17-21.44.15:586][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.06.17-21.44.15:586][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.06.17-21.44.15:773][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.06.17-21.44.15:788][  0]LogInit: XAudio2 using 'Speakers / Headphones (Realtek Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.06.17-21.44.15:895][  0]LogInit: FAudioDevice initialized.
+[2019.06.17-21.44.15:906][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.06.17-21.44.15:907][  0]LogInit: Texture streaming: Enabled
+[2019.06.17-21.44.16:071][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-21.44.16:071][  0]LogInit: Display: Game Engine Initialized.
+[2019.06.17-21.44.16:071][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.06.17-21.44.16:071][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.06.17-21.44.16:071][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.06.17-21.44.16:071][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.06.17-21.44.16:071][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.06.17-21.44.16:086][  0]LogInit: Display: Starting Game.
+[2019.06.17-21.44.16:086][  0]LogNet: Browse: /Game/TopDownBP/Maps/TopDownExampleMap?Name=Player
+[2019.06.17-21.44.16:086][  0]LogLoad: LoadMap: /Game/TopDownBP/Maps/TopDownExampleMap?Name=Player
+[2019.06.17-21.44.16:555][  0]LogAIModule: Creating AISystem for world TopDownExampleMap
+[2019.06.17-21.44.16:556][  0]LogLoad: Game class is 'TopDownGameMode_C'
+[2019.06.17-21.44.16:565][  0]LogWorld: Bringing World /Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap up for play (max tick rate 0) at 2019.06.17-22.44.16
+[2019.06.17-21.44.16:565][  0]LogWorld: Bringing up level for play took: 0.008395
+[2019.06.17-21.44.16:573][  0]LogLoad: Took 0.486908 seconds to LoadMap(/Game/TopDownBP/Maps/TopDownExampleMap)
+[2019.06.17-21.44.16:631][  0]LogRenderer: Reallocating scene render targets to support 1280x720 Format 10 NumSamples 1 (Frame:1).
+[2019.06.17-21.44.16:632][  0]LogLoad: (Engine Initialization) Total time: 7.75 seconds
+[2019.06.17-21.44.16:632][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.06.17-21.44.16:656][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.06.17-21.44.16:731][  1]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:746][  2]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:763][  3]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:779][  4]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:796][  5]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:811][  6]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:828][  7]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:844][  8]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:860][  9]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:877][ 10]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:893][ 11]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:907][ 12]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:924][ 13]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:940][ 14]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:956][ 15]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:972][ 16]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.16:988][ 17]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:004][ 18]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:021][ 19]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:037][ 20]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:053][ 21]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:069][ 22]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:085][ 23]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:102][ 24]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:118][ 25]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:134][ 26]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:150][ 27]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:167][ 28]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:183][ 29]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:199][ 30]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:215][ 31]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:231][ 32]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:248][ 33]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:263][ 34]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:279][ 35]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:295][ 36]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:312][ 37]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:327][ 38]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:344][ 39]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:360][ 40]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:376][ 41]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:393][ 42]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:409][ 43]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:424][ 44]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:440][ 45]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:457][ 46]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:474][ 47]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:489][ 48]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:505][ 49]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:522][ 50]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:537][ 51]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:553][ 52]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:569][ 53]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:586][ 54]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:602][ 55]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:618][ 56]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:634][ 57]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:650][ 58]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:666][ 59]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:683][ 60]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:699][ 61]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:714][ 62]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:730][ 63]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:746][ 64]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:762][ 65]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:779][ 66]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:795][ 67]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:811][ 68]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:827][ 69]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:843][ 70]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:860][ 71]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:876][ 72]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:892][ 73]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:909][ 74]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:925][ 75]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:942][ 76]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:957][ 77]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:973][ 78]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.17:989][ 79]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:005][ 80]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:021][ 81]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:037][ 82]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:054][ 83]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:070][ 84]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:086][ 85]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:102][ 86]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:118][ 87]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:134][ 88]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:150][ 89]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:166][ 90]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:183][ 91]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:199][ 92]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:215][ 93]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:231][ 94]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:247][ 95]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:264][ 96]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:280][ 97]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:296][ 98]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:312][ 99]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:328][100]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:344][101]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:359][102]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:375][103]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:392][104]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:408][105]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:425][106]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:442][107]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:457][108]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:473][109]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:489][110]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:505][111]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:522][112]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:537][113]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:553][114]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:569][115]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:586][116]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:602][117]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:617][118]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:633][119]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:650][120]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:666][121]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:683][122]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:698][123]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:714][124]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:730][125]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:747][126]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:763][127]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:779][128]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:795][129]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:811][130]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:827][131]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:844][132]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:860][133]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:876][134]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:892][135]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:908][136]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:925][137]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:941][138]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:958][139]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:973][140]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.18:989][141]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:005][142]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:021][143]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:037][144]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:053][145]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:069][146]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:085][147]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:102][148]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:118][149]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:134][150]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:150][151]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:166][152]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:182][153]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:198][154]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:215][155]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:231][156]LogBlueprintUserMessages: [TopDownCharacter_C_0] Peoples Saved
+[2019.06.17-21.44.19:231][156]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:247][157]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:263][158]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:279][159]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:295][160]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:311][161]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:327][162]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:344][163]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:360][164]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:376][165]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:392][166]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:409][167]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:425][168]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:441][169]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:457][170]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:474][171]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:489][172]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:505][173]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:521][174]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:537][175]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:553][176]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:570][177]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:586][178]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:602][179]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:618][180]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:634][181]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:651][182]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:666][183]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:683][184]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:698][185]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:715][186]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:731][187]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:747][188]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:763][189]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:779][190]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:795][191]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:812][192]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:828][193]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:844][194]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:860][195]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:876][196]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:892][197]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:908][198]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:924][199]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:940][200]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:956][201]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:973][202]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.19:989][203]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:005][204]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:021][205]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:037][206]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:053][207]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:069][208]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:085][209]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:102][210]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:118][211]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:134][212]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:150][213]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:166][214]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:183][215]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:199][216]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:215][217]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:231][218]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:247][219]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:263][220]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:279][221]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:296][222]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:312][223]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:328][224]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:344][225]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:360][226]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:376][227]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:392][228]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:409][229]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:425][230]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:440][231]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:456][232]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:473][233]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:491][234]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:506][235]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:521][236]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:537][237]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:553][238]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:570][239]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:586][240]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:602][241]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:618][242]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:634][243]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:651][244]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:667][245]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:683][246]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:699][247]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:715][248]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:730][249]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:747][250]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:763][251]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:779][252]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:796][253]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:812][254]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:828][255]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:844][256]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:859][257]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:875][258]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:892][259]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:908][260]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:924][261]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:940][262]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:956][263]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:972][264]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.20:989][265]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:006][266]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:022][267]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:037][268]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:053][269]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:070][270]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:086][271]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:102][272]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:118][273]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:134][274]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:150][275]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:166][276]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:182][277]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:198][278]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:214][279]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:231][280]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:247][281]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:263][282]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:279][283]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:295][284]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:312][285]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:328][286]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:344][287]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:360][288]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:376][289]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:393][290]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:408][291]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:424][292]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:440][293]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:456][294]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:473][295]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:489][296]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:505][297]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:523][298]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:538][299]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:554][300]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:570][301]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:586][302]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:602][303]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:618][304]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:634][305]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:650][306]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:666][307]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:682][308]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:699][309]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:715][310]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:731][311]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:747][312]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:763][313]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:779][314]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:796][315]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:811][316]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:827][317]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:844][318]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:860][319]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:876][320]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:892][321]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:908][322]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:924][323]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:941][324]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:957][325]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:973][326]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.21:989][327]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:005][328]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:022][329]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:038][330]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:054][331]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:070][332]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:086][333]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:102][334]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:118][335]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:134][336]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:151][337]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:168][338]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:183][339]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:199][340]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:215][341]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:232][342]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:247][343]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:263][344]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:280][345]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:296][346]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:311][347]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:328][348]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:345][349]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:361][350]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:376][351]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:392][352]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:408][353]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:424][354]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:440][355]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:457][356]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:473][357]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:489][358]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:505][359]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:522][360]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:538][361]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:554][362]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:570][363]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:586][364]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:602][365]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:618][366]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:634][367]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:650][368]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:667][369]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:682][370]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:699][371]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:715][372]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:731][373]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:748][374]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:764][375]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:780][376]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:796][377]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:812][378]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:828][379]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:844][380]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:860][381]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:876][382]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:893][383]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:909][384]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:925][385]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:941][386]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:957][387]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:973][388]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.22:989][389]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:005][390]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:021][391]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:037][392]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:054][393]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:070][394]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:086][395]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:102][396]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:118][397]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:134][398]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:150][399]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:167][400]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:183][401]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:199][402]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:215][403]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:231][404]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:247][405]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:263][406]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:279][407]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:296][408]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:312][409]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:328][410]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:345][411]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:361][412]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:376][413]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:392][414]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:408][415]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:424][416]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:441][417]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:457][418]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:473][419]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:490][420]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:506][421]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:522][422]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:538][423]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:554][424]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:571][425]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:587][426]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:604][427]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:619][428]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:635][429]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:651][430]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:667][431]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:683][432]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:699][433]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:716][434]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:732][435]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:748][436]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:764][437]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:780][438]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:796][439]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:812][440]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:829][441]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:845][442]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:861][443]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:877][444]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:893][445]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:909][446]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:925][447]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:941][448]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:957][449]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:973][450]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.23:989][451]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:005][452]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:022][453]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:038][454]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:054][455]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:071][456]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:087][457]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:104][458]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:118][459]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:135][460]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:151][461]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:167][462]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:183][463]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:200][464]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:216][465]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:231][466]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:247][467]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:263][468]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:279][469]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:296][470]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:312][471]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:328][472]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:344][473]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:361][474]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:377][475]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:393][476]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:409][477]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:425][478]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:441][479]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:457][480]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:473][481]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:489][482]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:506][483]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:522][484]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:538][485]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:554][486]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:570][487]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:586][488]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:603][489]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:619][490]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:635][491]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:651][492]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:667][493]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:683][494]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:699][495]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:715][496]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:731][497]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:747][498]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:763][499]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:780][500]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:796][501]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:812][502]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:829][503]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:845][504]LogBlueprintUserMessages: [TopDownCharacter_C_0] Peoples Saved
+[2019.06.17-21.44.24:845][504]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:860][505]LogBlueprintUserMessages: [TopDownCharacter_C_0] Peoples Saved
+[2019.06.17-21.44.24:860][505]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:876][506]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:892][507]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:909][508]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:925][509]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:941][510]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:957][511]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:973][512]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.24:989][513]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:006][514]LogBlueprintUserMessages: [TopDownCharacter_C_0] Peoples Saved
+[2019.06.17-21.44.25:006][514]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:022][515]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:038][516]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:054][517]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:070][518]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:086][519]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:102][520]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:119][521]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:136][522]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:152][523]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:167][524]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:183][525]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:199][526]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:215][527]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:232][528]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:247][529]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:264][530]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:280][531]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:296][532]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:313][533]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:328][534]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:345][535]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:361][536]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:377][537]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:393][538]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:409][539]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:425][540]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:442][541]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:457][542]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:474][543]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:490][544]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:505][545]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:522][546]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:538][547]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:554][548]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:570][549]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:586][550]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:602][551]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:619][552]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:635][553]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:652][554]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:667][555]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:683][556]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:699][557]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:716][558]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:732][559]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:747][560]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:763][561]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:780][562]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:796][563]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:812][564]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:828][565]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:845][566]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:861][567]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:876][568]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:892][569]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:909][570]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:925][571]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:941][572]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:957][573]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:973][574]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.25:990][575]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:006][576]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:022][577]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:038][578]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:054][579]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:070][580]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:086][581]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:103][582]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:119][583]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:135][584]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:151][585]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:168][586]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:184][587]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:200][588]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:216][589]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:232][590]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:248][591]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:264][592]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:280][593]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:297][594]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:313][595]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:329][596]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:345][597]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:362][598]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:376][599]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:393][600]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:409][601]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:425][602]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:442][603]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:457][604]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:473][605]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:490][606]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:506][607]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:522][608]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:538][609]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:554][610]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:570][611]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:586][612]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:602][613]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:619][614]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:635][615]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:651][616]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:667][617]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:684][618]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:700][619]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:716][620]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:732][621]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:748][622]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:764][623]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:780][624]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:796][625]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:812][626]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:829][627]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:845][628]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:861][629]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:877][630]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:893][631]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:910][632]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:926][633]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:942][634]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:958][635]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:974][636]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.26:990][637]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:006][638]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:022][639]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:038][640]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:054][641]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:071][642]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:087][643]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:103][644]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:119][645]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:135][646]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:152][647]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:168][648]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:184][649]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:201][650]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:216][651]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:232][652]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:248][653]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:264][654]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:280][655]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:297][656]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:312][657]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:328][658]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:344][659]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:360][660]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:377][661]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:393][662]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:409][663]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:425][664]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:442][665]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:457][666]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:474][667]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:490][668]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:506][669]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:522][670]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:538][671]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:555][672]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:571][673]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:587][674]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:603][675]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:619][676]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:635][677]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:651][678]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:667][679]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:683][680]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:700][681]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:717][682]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:732][683]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:748][684]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:764][685]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:780][686]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:796][687]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:812][688]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:828][689]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:844][690]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:861][691]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:877][692]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:893][693]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:909][694]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:925][695]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:942][696]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:957][697]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:974][698]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.27:990][699]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:006][700]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:022][701]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:038][702]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:055][703]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:070][704]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:086][705]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:103][706]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:119][707]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:135][708]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:152][709]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:168][710]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:184][711]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:201][712]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:217][713]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:234][714]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:248][715]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:264][716]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:280][717]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:297][718]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:313][719]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:329][720]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:345][721]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:361][722]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:377][723]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:394][724]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:409][725]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:425][726]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:442][727]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:457][728]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:473][729]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:490][730]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:506][731]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:522][732]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:538][733]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:554][734]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:571][735]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:587][736]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:603][737]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:619][738]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:635][739]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:651][740]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:667][741]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:683][742]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:700][743]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:716][744]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:733][745]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:749][746]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:765][747]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:780][748]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:796][749]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:813][750]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:829][751]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:845][752]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:861][753]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:877][754]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:893][755]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:910][756]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:926][757]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:942][758]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:958][759]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:974][760]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.28:990][761]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:007][762]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:023][763]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:039][764]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:055][765]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:071][766]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:086][767]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:103][768]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:119][769]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:136][770]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:151][771]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:167][772]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:184][773]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:200][774]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:217][775]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:233][776]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:249][777]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:265][778]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:280][779]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:296][780]LogPawn: Error: EnableInput can only be specified on a Pawn for its Controller
+[2019.06.17-21.44.29:435][781]LogSlate: Window 'UoP_GJ_ADPD (64-bit Development PCD3D_SM5) ' being destroyed
+[2019.06.17-21.44.29:436][781]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2019.06.17-21.44.29:440][781]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2019.06.17-21.44.29:441][781]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-21.44.29:441][781]LogEngine: All Windows Closed
+[2019.06.17-21.44.29:441][781]LogWindows: FPlatformMisc::RequestExit(0)
+[2019.06.17-21.44.29:585][782]LogExit: Preparing to exit.
+[2019.06.17-21.44.29:585][782]LogMoviePlayer: Shutting down movie player
+[2019.06.17-21.44.30:171][782]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-21.44.30:182][782]LogExit: Game engine shut down
+[2019.06.17-21.44.30:329][782]LogExit: Object subsystem successfully closed.
+[2019.06.17-21.44.30:342][782]LogShaderCompilers: Display: Shaders left to compile 0
+[2019.06.17-21.44.30:345][782]LogD3D11RHI: Shutdown
+[2019.06.17-21.44.30:345][782]LogD3D11RHI: CleanupD3DDevice
+[2019.06.17-21.44.30:346][782]LogD3D11RHI: ~FD3D11DynamicRHI
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (384)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module SequenceRecorder (382)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module AutomationController (380)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module AutomationWorker (378)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module Voice (376)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module AIModule (374)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module GameplayDebugger (373)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module AITestSuite (371)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module NavigationSystem (369)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (366)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (364)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (362)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (360)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (358)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (356)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module CharacterAI (354)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module SessionServices (352)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (350)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (348)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module MovieScene (346)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module PortalServices (342)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module PortalRpc (340)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module MessagingRpc (338)
+[2019.06.17-21.44.30:364][782]LogModuleManager: Shutting down and abandoning module ProfilerService (336)
+[2019.06.17-21.44.30:558][782]LogModuleManager: Shutting down and abandoning module TaskGraph (334)
+[2019.06.17-21.44.30:558][782]LogModuleManager: Shutting down and abandoning module SteamVRController (332)
+[2019.06.17-21.44.30:558][782]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (330)
+[2019.06.17-21.44.30:558][782]LogModuleManager: Shutting down and abandoning module OculusInput (328)
+[2019.06.17-21.44.30:558][782]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (326)
+[2019.06.17-21.44.30:558][782]LogModuleManager: Shutting down and abandoning module EditableMesh (324)
+[2019.06.17-21.44.30:558][782]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (322)
+[2019.06.17-21.44.30:558][782]LogModuleManager: Shutting down and abandoning module CableComponent (320)
+[2019.06.17-21.44.30:558][782]LogModuleManager: Shutting down and abandoning module AudioCapture (318)
+[2019.06.17-21.44.30:558][782]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (316)
+[2019.06.17-21.44.30:559][782]LogModuleManager: Shutting down and abandoning module AndroidPermission (314)
+[2019.06.17-21.44.30:559][782]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (312)
+[2019.06.17-21.44.30:559][782]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (310)
+[2019.06.17-21.44.30:559][782]LogModuleManager: Shutting down and abandoning module MediaCompositing (308)
+[2019.06.17-21.44.30:559][782]LogModuleManager: Shutting down and abandoning module LinearTimecode (306)
+[2019.06.17-21.44.30:559][782]LogModuleManager: Shutting down and abandoning module ImgMedia (304)
+[2019.06.17-21.44.30:561][782]LogModuleManager: Shutting down and abandoning module HTML5Networking (302)
+[2019.06.17-21.44.30:561][782]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (300)
+[2019.06.17-21.44.30:561][782]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (299)
+[2019.06.17-21.44.30:561][782]LogModuleManager: Shutting down and abandoning module GeometryCache (296)
+[2019.06.17-21.44.30:561][782]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (295)
+[2019.06.17-21.44.30:561][782]LogModuleManager: Shutting down and abandoning module BackChannel (292)
+[2019.06.17-21.44.30:561][782]LogModuleManager: Shutting down and abandoning module AppleVision (290)
+[2019.06.17-21.44.30:562][782]LogModuleManager: Shutting down and abandoning module AppleImageUtils (288)
+[2019.06.17-21.44.30:562][782]LogModuleManager: Shutting down and abandoning module DatasmithContent (286)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (284)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module CryptoKeys (282)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (280)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module HotReload (279)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (276)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module SourceControl (269)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (266)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (264)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (262)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module PhysXVehicles (260)
+[2019.06.17-21.44.30:563][782]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (258)
+[2019.06.17-21.44.30:564][782]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (256)
+[2019.06.17-21.44.30:564][782]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (254)
+[2019.06.17-21.44.30:564][782]LogModuleManager: Shutting down and abandoning module ApexDestructionEditor (252)
+[2019.06.17-21.44.30:564][782]LogModuleManager: Shutting down and abandoning module ContentBrowser (251)
+[2019.06.17-21.44.30:564][782]LogModuleManager: Shutting down and abandoning module CollectionManager (250)
+[2019.06.17-21.44.30:564][782]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (249)
+[2019.06.17-21.44.30:564][782]LogModuleManager: Shutting down and abandoning module ApexDestruction (244)
+[2019.06.17-21.44.30:564][782]LogModuleManager: Shutting down and abandoning module ActorSequence (242)
+[2019.06.17-21.44.30:564][782]LogModuleManager: Shutting down and abandoning module UdpMessaging (240)
+[2019.06.17-21.44.30:666][782]LogModuleManager: Shutting down and abandoning module TcpMessaging (238)
+[2019.06.17-21.44.31:145][782]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (236)
+[2019.06.17-21.44.31:146][782]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (234)
+[2019.06.17-21.44.31:146][782]LogModuleManager: Shutting down and abandoning module FacialAnimation (232)
+[2019.06.17-21.44.31:146][782]LogModuleManager: Shutting down and abandoning module DataValidation (230)
+[2019.06.17-21.44.31:146][782]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (228)
+[2019.06.17-21.44.31:146][782]LogModuleManager: Shutting down and abandoning module TreeMap (227)
+[2019.06.17-21.44.31:146][782]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (224)
+[2019.06.17-21.44.31:146][782]LogModuleManager: Shutting down and abandoning module AISupportModule (222)
+[2019.06.17-21.44.31:146][782]LogModuleManager: Shutting down and abandoning module Paper2D (220)
+[2019.06.17-21.44.31:146][782]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (218)
+[2019.06.17-21.44.31:146][782]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2019.06.17-21.44.31:146][782]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2019.06.17-21.44.31:149][782]LogModuleManager: Shutting down and abandoning module Media (213)
+[2019.06.17-21.44.31:154][782]LogModuleManager: Shutting down and abandoning module PacketHandler (210)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (208)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (206)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module MediaAssets (204)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module Overlay (202)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module OverlayEditor (201)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module VREditor (198)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module StringTableEditor (196)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (194)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (192)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module FunctionalTesting (190)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (188)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (187)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module UMG (184)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module UMGEditor (183)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module Sequencer (182)
+[2019.06.17-21.44.31:155][782]LogModuleManager: Shutting down and abandoning module MessageLog (179)
+[2019.06.17-21.44.31:156][782]LogModuleManager: Shutting down and abandoning module SlateReflector (174)
+[2019.06.17-21.44.31:156][782]LogModuleManager: Shutting down and abandoning module Slate (172)
+[2019.06.17-21.44.31:156][782]LogModuleManager: Shutting down and abandoning module EditorStyle (170)
+[2019.06.17-21.44.31:158][782]LogModuleManager: Shutting down and abandoning module MRMesh (168)
+[2019.06.17-21.44.31:158][782]LogModuleManager: Shutting down and abandoning module Messaging (166)
+[2019.06.17-21.44.31:158][782]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2019.06.17-21.44.31:158][782]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2019.06.17-21.44.31:158][782]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2019.06.17-21.44.31:158][782]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2019.06.17-21.44.31:158][782]LogModuleManager: Shutting down and abandoning module Core (156)
+[2019.06.17-21.44.31:158][782]LogModuleManager: Shutting down and abandoning module LevelSequence (154)
+[2019.06.17-21.44.31:158][782]LogModuleManager: Shutting down and abandoning module KismetCompiler (152)
+[2019.06.17-21.44.31:158][782]LogModuleManager: Shutting down and abandoning module MeshUtilities (150)
+[2019.06.17-21.44.31:158][782]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (149)
+[2019.06.17-21.44.31:159][782]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (148)
+[2019.06.17-21.44.31:159][782]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (147)
+[2019.06.17-21.44.31:159][782]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (145)
+[2019.06.17-21.44.31:159][782]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (143)
+[2019.06.17-21.44.31:159][782]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (141)
+[2019.06.17-21.44.31:159][782]LogModuleManager: Shutting down and abandoning module MaterialBaking (137)
+[2019.06.17-21.44.31:159][782]LogModuleManager: Shutting down and abandoning module DerivedDataCache (132)
+[2019.06.17-21.44.31:561][782]LogDerivedDataCache: Shutdown
+[2019.06.17-21.44.31:561][782]LogModuleManager: Shutting down and abandoning module XGEController (130)
+[2019.06.17-21.44.31:562][782]LogModuleManager: Shutting down and abandoning module TargetPlatform (128)
+[2019.06.17-21.44.31:562][782]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (127)
+[2019.06.17-21.44.31:562][782]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (125)
+[2019.06.17-21.44.31:562][782]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (123)
+[2019.06.17-21.44.31:562][782]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (121)
+[2019.06.17-21.44.31:562][782]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (119)
+[2019.06.17-21.44.31:562][782]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (117)
+[2019.06.17-21.44.31:562][782]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (115)
+[2019.06.17-21.44.31:562][782]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (113)
+[2019.06.17-21.44.31:562][782]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (111)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (109)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module ImageWrapper (108)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (105)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (103)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (101)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (99)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (97)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (95)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (93)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (91)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module InputCore (88)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module Settings (86)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module PhysXCooking (84)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module SteamVR (82)
+[2019.06.17-21.44.31:563][782]LogModuleManager: Shutting down and abandoning module OculusHMD (80)
+[2019.06.17-21.44.31:564][782]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (78)
+[2019.06.17-21.44.31:564][782]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (76)
+[2019.06.17-21.44.31:564][782]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (74)
+[2019.06.17-21.44.31:564][782]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (70)
+[2019.06.17-21.44.31:565][782]LogModuleManager: Shutting down and abandoning module XMPP (65)
+[2019.06.17-21.44.31:565][782]LogModuleManager: Shutting down and abandoning module WebSockets (64)
+[2019.06.17-21.44.31:580][782]LogModuleManager: Shutting down and abandoning module HTTP (61)
+[2019.06.17-21.44.31:602][782]LogModuleManager: Shutting down and abandoning module SSL (60)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module MagicLeapEmulator (56)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (54)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (52)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (50)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (48)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (46)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module MagicLeapGestures (44)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (42)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module MagicLeapController (40)
+[2019.06.17-21.44.31:603][782]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module MagicLeap (38)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2019.06.17-21.44.31:603][782]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2019.06.17-21.44.31:607][782]LogExit: Exiting.
+[2019.06.17-21.44.31:614][782]Log file closed, 06/17/19 22:44:31
