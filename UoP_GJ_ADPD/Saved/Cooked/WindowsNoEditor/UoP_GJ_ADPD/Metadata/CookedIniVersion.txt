@@ -1643,7 +1643,7 @@ Windows.Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteFadedColor:0=(R
 Windows.Game:StartupActions:bAddPacks:0=False
 Windows.Game:StartupActions:InsertPack:0=(PackSource="StarterContent.upack,PackName="StarterContent")
 Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:Build:0=IfProjectHasCode
-Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:StagingDirectory:0=(Path="C/Users/Thai/Desktop/Hurricane Peeps")
+Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:StagingDirectory:0=(Path="D/UP763322/Hurricane Peeps (3)")
 Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:IncludeDebugFiles:0=False
 Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:BlueprintNativizationMethod:0=Disabled
 Windows.Game:/Script/UnrealEd.ProjectPackagingSettings:bIncludeNativizedAssetsInProjectGeneration:0=False

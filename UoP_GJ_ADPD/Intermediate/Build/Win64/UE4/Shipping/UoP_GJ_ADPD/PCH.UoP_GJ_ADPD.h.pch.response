@@ -52,20 +52,20 @@
 /I Runtime\Core\Public\Traits
 /I Runtime\Core\Public\UObject
 /I Runtime\Core\Public\Windows
-/I F:\GitHub\UOPGameJam2019\UoP_GJ_ADPD\Intermediate
-/I F:\GitHub\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Source
-/I "F:\Visual Studio\VC\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.10240.0\ucrt"
+/I D:\763322\UOPGameJam2019\UoP_GJ_ADPD\Intermediate
+/I D:\763322\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Source
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.15.26726\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6\include\um"
-/I "C:\Program Files (x86)\Windows Kits\8.1\include\shared"
-/I "C:\Program Files (x86)\Windows Kits\8.1\include\um"
-/I "C:\Program Files (x86)\Windows Kits\8.1\include\winrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"
 /D_HAS_EXCEPTIONS=0
-/I F:\GitHub\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Build\Win64\UE4\Shipping\UoP_GJ_ADPD
-/Yc"F:\GitHub\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Build\Win64\UE4\Shipping\UoP_GJ_ADPD\PCH.UoP_GJ_ADPD.h"
-/Fp"F:\GitHub\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Build\Win64\UE4\Shipping\UoP_GJ_ADPD\PCH.UoP_GJ_ADPD.h.pch"
-"F:\GitHub\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Build\Win64\UE4\Shipping\UoP_GJ_ADPD\PCH.UoP_GJ_ADPD.cpp"
-/Fo"F:\GitHub\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Build\Win64\UE4\Shipping\UoP_GJ_ADPD\PCH.UoP_GJ_ADPD.h.obj"
+/I D:\763322\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Build\Win64\UE4\Shipping\UoP_GJ_ADPD
+/Yc"D:\763322\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Build\Win64\UE4\Shipping\UoP_GJ_ADPD\PCH.UoP_GJ_ADPD.h"
+/Fp"D:\763322\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Build\Win64\UE4\Shipping\UoP_GJ_ADPD\PCH.UoP_GJ_ADPD.h.pch"
+"D:\763322\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Build\Win64\UE4\Shipping\UoP_GJ_ADPD\PCH.UoP_GJ_ADPD.cpp"
+/Fo"D:\763322\UOPGameJam2019\UoP_GJ_ADPD\Intermediate\Build\Win64\UE4\Shipping\UoP_GJ_ADPD\PCH.UoP_GJ_ADPD.h.obj"
 /TP
 /GR-
 /W4
